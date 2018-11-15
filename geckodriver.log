@@ -91,3 +91,65 @@ JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae
 1542274763372	Marionette	INFO	Stopped listening on port 62415
 1542274766506	Marionette	INFO	Stopped listening on port 62185
 1542274769434	Marionette	INFO	Stopped listening on port 61984
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542276259574	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.WdUepO4WgChA"
+1542276262199	Marionette	INFO	Listening on port 65057
+1542276262232	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+1542276346782	Marionette	INFO	Stopped listening on port 65057
+1542276352761	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.POnfgJ1BR0vM"
+1542276354952	Marionette	INFO	Listening on port 49161
+1542276355021	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+1542276544332	Marionette	INFO	Stopped listening on port 49161
+1542276564050	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.gfQQSE7Y75Qc"
+1542276566505	Marionette	INFO	Listening on port 50156
+1542276566565	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+1542276643285	Marionette	INFO	Stopped listening on port 50156
+1542276667816	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.Dza7QB7epiiI"
+1542276670208	Marionette	INFO	Listening on port 50700
+1542276670306	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+1542276722733	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.QReMbvr5SKgZ"
+1542276725085	Marionette	INFO	Listening on port 51023
+1542276725126	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+console.error: BroadcastService: 
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+

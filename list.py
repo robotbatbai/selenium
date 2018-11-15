@@ -1,6 +1,7 @@
 from selenium import webdriver
 import pickle
 import time
+from bs4 import BeautifulSoup
 
 
 driver = webdriver.Firefox()
@@ -12,29 +13,14 @@ for cookie in cookies:
 
 def extract_product_urls_from_list_page(list_page_url):
     driver.get(list_page_url)
-    time.sleep(5)
-    cats = driver.find_elements_by_css_selector('span.title')
+    content = driver.page_source
 
-    all_links = set()
-    for ind, cat in enumerate(cats):
-        print(cat.text)
-        try:
-            cat.click()
-        except Exception:
-            continue
-        if ind == 0:
-            items = driver.find_elements_by_class_name('item-desc')
-            links = [item.get_attribute('href') for item in items]
-        else:
-            items = driver.find_elements_by_css_selector('div.title > a')
-            links = [item.get_attribute('href') for item in items]
-        for link in links:
-            all_links.add(link)
-        time.sleep(2)
-    return all_links
+    soup = BeautifulSoup(content, "html.parser")
 
+    for link in soup.find('ul',{'class':'items-list'}).find_all('div',{'class':'pic'}):
+        print link.a['href']    
 
 if __name__ == '__main__':
-    duvetlist = extract_product_urls_from_list_page('https://beddingoutlet.aliexpress.com/store/group/Galaxy-Sea-Duvet-Cover-Set/1160570_512585898.html')
-    print(duvetlist)
+    extract_product_urls_from_list_page('https://beddingoutlet.aliexpress.com/store/group/Galaxy-Sea-Duvet-Cover-Set/1160570_512585898.html')
+    #print(duvetlist)
 
