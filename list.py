@@ -18,9 +18,17 @@ def extract_product_urls_from_list_page(list_page_url):
     soup = BeautifulSoup(content, "html.parser")
 
     for link in soup.find('ul',{'class':'items-list'}).find_all('div',{'class':'pic'}):
-        print link.a['href']    
+        print link.a['href']   
+    next_page = soup.find('a',{'class':'ui-pagination-next'}) 
+    if next_page:
+        time.sleep(3)
+        print("--------------trang2---------------")
+        domain = "https:"
+        extract_product_urls_from_list_page(domain + next_page['href'])
+    else:
+        return
 
 if __name__ == '__main__':
-    extract_product_urls_from_list_page('https://beddingoutlet.aliexpress.com/store/group/Galaxy-Sea-Duvet-Cover-Set/1160570_512585898.html')
+    extract_product_urls_from_list_page('https://beddingoutlet.aliexpress.com/store/group/Dreamcatcher-Duvet-Cover-Set/1160570_513026552.html')
     #print(duvetlist)
 
