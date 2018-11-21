@@ -4,7 +4,7 @@ from selenium import webdriver
 browser = webdriver.Firefox()
 
 def get_cookies():
-    browser.get("https://login.aliexpress.com/buyer.htm?return=https%3A%2F%2Fwww.aliexpress.com%2F&random=CEA73DF4D81fdsa75227F78080B9B6126")
+    browser.get("https://www.aliexpress.com")
     print('input your username and passowrd in firefox and hit submit')
     input('Hit enter here if you summited the form: <Enter>')
     cookies= browser.get_cookies()

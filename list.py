@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import ali_config
 from slugify import slugify
 import pandas as pd
-
+from random import randint
 
 driver = webdriver.Firefox()
 driver.get("https://aliexpress.com")
@@ -52,6 +52,7 @@ def extract_product_info(product_url):
     title = remove_trademark(soup.find('h1', {'class': 'product-name'}).text)
     handle =  slugify(title)
     size = item.size
+    body = item.body[randint(0,3)]
     index = 0
     for image in soup.find('ul',{'id':'j-image-thumb-list'}).find_all('img'):
         src = edit_image(image['src'])
@@ -59,7 +60,7 @@ def extract_product_info(product_url):
             product_list.append({
                 'Handle':handle,
                 'title': title,
-                'Body (HTML)':item.body,
+                'Body (HTML)':body,
                 'Vendor':'',
                 'Type': item.productType,
                 'Tags':item.taglist,
@@ -73,7 +74,7 @@ def extract_product_info(product_url):
                 'Variant SKU':'',
                 'Variant Grams':'',
                 'Variant Inventory Tracker':'',
-                'Variant Inventory Qty':50 if len(size) > index else "",
+                'Variant Inventory Qty':10 if len(size) > index else "",
                 'Variant Inventory Policy':'deny' if len(size) > index else "",
                 'Variant Fulfillment Service':'manual' if len(size) > index else "",
                 'Variant Price': size[index][1] if len(size) > index else "",
@@ -104,7 +105,7 @@ def extract_product_info(product_url):
                     'Variant SKU':'',
                     'Variant Grams':'',
                     'Variant Inventory Tracker':'',
-                    'Variant Inventory Qty':50 if len(size) > index else "",
+                    'Variant Inventory Qty':10 if len(size) > index else "",
                     'Variant Inventory Policy':'deny' if len(size) > index else "",
                     'Variant Fulfillment Service':'manual' if len(size) > index else "",
                     'Variant Price': size[index][1] if len(size) > index else "",
@@ -150,9 +151,9 @@ def extract_product_info(product_url):
         index +=  1 
 
 if __name__ == '__main__':
-    item = ali_config.duvetClass()   
+    item = ali_config.blanketClass()   
     product_list = []
-    extract_product_urls_from_list_page('https://beddingoutlet.aliexpress.com/store/group/Galaxy-Sea-Duvet-Cover-Set/1160570_512585898.html')
+    extract_product_urls_from_list_page(item.urls)
     products = pd.DataFrame.from_records(product_list)
-    products.to_csv("products.csv", index = False)
+    products.to_csv("Blankets.csv", index = False)
 
