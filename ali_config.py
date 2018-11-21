@@ -66,11 +66,11 @@ class duvetClass:
 
 class blanketClass:
     size = [['130CMx150CM',58.62,92.13],['150CMx200CM',74.5,117.6]]
-    taglist = "blankets, printed blanket, Throw Blankets"
-    productType = "Bedspread, Throw Blankets"
+    taglist = "blankets, printed blanket, hooded Blankets"
+    productType = "Bedspread, hooded Blankets"
     # start from this url 
     url = ['https://www.aliexpress.com/store/product/BeddingOutlet-Watercolor-Dreamcatcher-Bedding-Set-King-Blue-Bedclothes-for-Adult-Kids-Luxury-Chinese-Style-Quilt-Cover/1160570_32831117756.html']
-    urls = 'https://beddingoutlet.aliexpress.com/store/group/Throw-Blankets/1160570_513431825.html'
+    urls = 'https://beddingoutlet.aliexpress.com/store/group/Hooded-Blankets/1160570_513431826.html'
 
     # list keyword filter from title 
     replaceList = ['BeddingOutlet','Chinese','King ', 'Blue ','for Adult Kids ','3 Pcs','King ','Queen ','Dropship ']
