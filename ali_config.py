@@ -1,4 +1,4 @@
-# coding:utf-8
+# coding:utf-8s
 class duvetClass:
     size = [['Twin',78.5,98],['Full',84.5,105.6],['Queen',89.5,111.9],['King',98.5,123],['California King',98.5,123]]
     taglist = "tropical Duvet Cover Set, bedclothes, bedding sets, bed linen, Bedspread, bedcover, bed sheets, bedspread sets, luxury bedding sets"
