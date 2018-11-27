@@ -1,3 +1,4 @@
+# coding:utf-8
 class duvetClass:
     size = [['Twin',78.5,98],['Full',84.5,105.6],['Queen',89.5,111.9],['King',98.5,123],['California King',98.5,123]]
     taglist = "tropical Duvet Cover Set, bedclothes, bedding sets, bed linen, Bedspread, bedcover, bed sheets, bedspread sets, luxury bedding sets"
@@ -66,8 +67,8 @@ class duvetClass:
 ################################## blanket and throws ############################
 class blanketClass:
     size = [['Throw(50"x60")',39.3,49.5],['Twin(60"x80")',49.2,61.5]]
-    taglist = "blankets, printed blanket, hooded Blankets"
-    productType = "Blankets and Throws"
+    taglist = "fuzzy blankets, throw blankets, throws and blankets, plush blankets, sofa throws, couch throws"
+    productType = "throws and blankets"
     # start from this url 
     url = ['https://www.aliexpress.com/store/product/BeddingOutlet-Watercolor-Dreamcatcher-Bedding-Set-King-Blue-Bedclothes-for-Adult-Kids-Luxury-Chinese-Style-Quilt-Cover/1160570_32831117756.html']
     urls = 'https://beddingoutlet.aliexpress.com/store/group/Throw-Blankets/1160570_513431825/1.html'

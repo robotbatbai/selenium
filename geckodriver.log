@@ -662,3 +662,114 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
 
+1543304631954	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.PAmpUHtCgCPf"
+1543304635330	Marionette	INFO	Listening on port 55177
+1543304635406	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://gpsfront.aliexpress.com/queryGpsProductAjax.do?callback=jQuery183011286262994491636_1543304637875&widget_id=5405336&limit=6&imageSize=140x140&numTopProducts=1&currency=&_=1543304637971, line 1: SyntaxError: expected expression, got '<'
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript error: https://gpsfront.aliexpress.com/queryGpsProductAjax.do?callback=jQuery183011286262994491636_1543304637877&numTopProducts=3&limit=6&widgetId=5405336&imageSize=350x350&_=1543304637988, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://gpsfront.aliexpress.com/queryGpsProductAjax.do?&callback=jQuery183011286262994491636_1543304637876&widget_id=5547389&phase=1&limit=5&imageSize=220x220&_=1543304637984, line 1: SyntaxError: expected expression, got '<'
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1543304675517	Marionette	INFO	Stopped listening on port 55177
+1543304786759	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.ntQmhrslivbU"
+1543304789845	Marionette	INFO	Listening on port 55446
+1543304789871	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1543305114122	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.8KAYLRw7FTZz"
+1543305117225	Marionette	INFO	Listening on port 55588
+1543305117296	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+1543305194848	Marionette	INFO	Stopped listening on port 55588
+1543305197355	Marionette	INFO	Stopped listening on port 55446
+1543305218557	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.5YlDRzvFdXA6"
+1543305221436	Marionette	INFO	Listening on port 55716
+1543305221448	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1543305315209	Marionette	INFO	Stopped listening on port 55716
+1543305567650	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.OZlhHisrSIt7"
+1543305570355	Marionette	INFO	Listening on port 55946
+1543305570404	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1543305601432	Marionette	INFO	Stopped listening on port 55946
+1543307275965	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.x3oydjz7r6in"
+1543307278944	Marionette	INFO	Listening on port 56401
+1543307279066	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1543307308028	Marionette	INFO	Stopped listening on port 56401
+1543307315866	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.nsAsjx0IcgHS"
+1543307318102	Marionette	INFO	Listening on port 56523
+1543307318155	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1543309473284	Marionette	INFO	Stopped listening on port 56523
+1543309526103	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/bg/dg1p1pgd12v2yg35zzxv35y00000gn/T/rust_mozprofile.HP4sU1IgvOnL"
+1543309528556	Marionette	INFO	Listening on port 57031
+1543309528623	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20181022224448/buyer/front/ae-header.js, line 4: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+

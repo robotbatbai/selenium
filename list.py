@@ -1,3 +1,4 @@
+# coding:utf-8
 from selenium import webdriver
 import pickle
 import time
@@ -20,12 +21,12 @@ def extract_product_urls_from_list_page(list_page_url):
     soup = BeautifulSoup(content, "html.parser")
     domain = "https:"
     for link in soup.find('ul',{'class':'items-list'}).find_all('div',{'class':'pic'}):
-        time.sleep(2)
+        time.sleep(3)
         extract_product_info(domain+link.a['href'])
 
     next_page = soup.find('a',{'class':'ui-pagination-next'}) 
     if next_page:
-        time.sleep(2)
+        time.sleep(3)
         extract_product_urls_from_list_page(domain + next_page['href'])
 
 # remove _50x50.jpg 
@@ -49,7 +50,11 @@ def extract_product_info(product_url):
     global item
 
     #product_id = soup.find('input', {'id': 'hid-product-id'})['value']
-    title = remove_trademark(soup.find('h1', {'class': 'product-name'}).text)
+    try:
+        title = remove_trademark(soup.find('h1', {'class': 'product-name'}).text)
+    except: 
+        print(product_url)
+        return
     handle =  slugify(title)
     size = item.size
     body = item.body[randint(0,3)]
