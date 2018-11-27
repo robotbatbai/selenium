@@ -63,11 +63,11 @@ class duvetClass:
             <h3><strong><span>BED SET INCLUDES:  1* DUVET COVER 2* PILLOWCASES</span></strong></h3>
         </div>"""
     body = [body1,body2,body3,body4]
-
+################################## blanket and throws ############################
 class blanketClass:
-    size = [['130CMx150CM',58.62,92.13],['150CMx200CM',74.5,117.6]]
+    size = [['Throw(50"x60")',39.3,49.5],['Twin(60"x80")',49.2,61.5]]
     taglist = "blankets, printed blanket, hooded Blankets"
-    productType = "Bedspread, hooded Blankets"
+    productType = "Blankets and Throws"
     # start from this url 
     url = ['https://www.aliexpress.com/store/product/BeddingOutlet-Watercolor-Dreamcatcher-Bedding-Set-King-Blue-Bedclothes-for-Adult-Kids-Luxury-Chinese-Style-Quilt-Cover/1160570_32831117756.html']
     urls = 'https://beddingoutlet.aliexpress.com/store/group/Hooded-Blankets/1160570_513431826.html'
@@ -107,6 +107,95 @@ class blanketClass:
 <p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
 <p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
     body = [body1,body2,body3,body4]
+##################################### hooded blanket ###########################################
+class hoodedClass():
+    size = [['Adult(60"x80")',49.6,62.5],['Kid(50"x60")',39.8,49.5]]
+    taglist = "blankets, printed blanket, hooded Blankets"
+    productType = "Hooded Blanket"
+    # start from this url 
+    url = ['https://www.aliexpress.com/store/product/BeddingOutlet-Watercolor-Dreamcatcher-Bedding-Set-King-Blue-Bedclothes-for-Adult-Kids-Luxury-Chinese-Style-Quilt-Cover/1160570_32831117756.html']
+    urls = 'https://beddingoutlet.aliexpress.com/store/group/Hooded-Blankets/1160570_513431826.html'
+
+    # list keyword filter from title 
+    replaceList = ['BeddingOutlet','Chinese','King ', 'Blue ','for Adult Kids ','3 Pcs','King ','Queen ','Dropship ']
+    spiltImage = "#j-image-thumb-list img::attr(src)"
+    title = "h1.product-name::text"
+    
+    # get list page 
+    pageDetail = "ul.items-list div.pic"
+    nextPage = "a.ui-pagination-next::attr(href)"
+
+    #body list 
+    body1 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body2 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body3 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body4 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body = [body1,body2,body3,body4]
+##################################### Mats and Rugs ###########################################
+class matClass():
+    size = [['15.7"x23.6"',23.8,31.5],['20"x32"',29.6,37.5]]
+    taglist = "blankets, printed blanket, hooded Blankets"
+    productType = "Mats and Rugs"
+    # start from this url 
+    url = ['https://www.aliexpress.com/store/product/BeddingOutlet-Watercolor-Dreamcatcher-Bedding-Set-King-Blue-Bedclothes-for-Adult-Kids-Luxury-Chinese-Style-Quilt-Cover/1160570_32831117756.html']
+    urls = 'https://beddingoutlet.aliexpress.com/store/group/Hooded-Blankets/1160570_513431826.html'
+
+    # list keyword filter from title 
+    replaceList = ['BeddingOutlet','Chinese','King ', 'Blue ','for Adult Kids ','3 Pcs','King ','Queen ','Dropship ']
+    spiltImage = "#j-image-thumb-list img::attr(src)"
+    title = "h1.product-name::text"
+    
+    # get list page 
+    pageDetail = "ul.items-list div.pic"
+    nextPage = "a.ui-pagination-next::attr(href)"
+
+    #body list 
+    body1 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body2 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body3 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body4 = """<p><strong>Product Description</strong></p>
+<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
+<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body = [body1,body2,body3,body4]
+
 
 
     
