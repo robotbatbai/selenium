@@ -1,4 +1,4 @@
-# coding:utf-8
+# coding:utf-8 
 from selenium import webdriver
 import pickle
 import time
@@ -156,9 +156,9 @@ def extract_product_info(product_url):
         index +=  1 
 
 if __name__ == '__main__':
-    item = ali_config.blanketClass()   
+    item = ali_config.hoodedClass()   
     product_list = []
     extract_product_urls_from_list_page(item.urls)
     products = pd.DataFrame.from_records(product_list)
-    products.to_csv("Blankets.csv", index = False)
+    products.to_csv("hooded.csv", index = False)
 

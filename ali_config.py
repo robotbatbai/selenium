@@ -1,4 +1,4 @@
-# coding:utf-8s
+# coding:utf-8
 class duvetClass:
     size = [['Twin',78.5,98],['Full',84.5,105.6],['Queen',89.5,111.9],['King',98.5,123],['California King',98.5,123]]
     taglist = "tropical Duvet Cover Set, bedclothes, bedding sets, bed linen, Bedspread, bedcover, bed sheets, bedspread sets, luxury bedding sets"
@@ -111,7 +111,7 @@ class blanketClass:
 ##################################### hooded blanket ###########################################
 class hoodedClass():
     size = [['Adult(60"x80")',49.6,62.5],['Kid(50"x60")',39.8,49.5]]
-    taglist = "blankets, printed blanket, hooded Blankets"
+    taglist = "hooded blanket, hooded blanket for adults, blanket with hood"
     productType = "Hooded Blanket"
     # start from this url 
     url = ['https://www.aliexpress.com/store/product/BeddingOutlet-Watercolor-Dreamcatcher-Bedding-Set-King-Blue-Bedclothes-for-Adult-Kids-Luxury-Chinese-Style-Quilt-Cover/1160570_32831117756.html']
@@ -127,30 +127,34 @@ class hoodedClass():
     nextPage = "a.ui-pagination-next::attr(href)"
 
     #body list 
-    body1 = """<p><strong>Product Description</strong></p>
-<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
-    body2 = """<p><strong>Product Description</strong></p>
-<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
-    body3 = """<p><strong>Product Description</strong></p>
-<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
-    body4 = """<p><strong>Product Description</strong></p>
-<p><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Material:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i3.41be44efaaI66d">Sherpa Fleece</span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Feature:</span></strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i5.41be44efaaI66d">Portable,Anti-Pilling,Wearable</span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i6.41be44efaaI66d">Season:</span></strong><span class="propery-des" title="Spring/Autumn">Spring/Autumn</span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><strong><span class="propery-title" data-spm-anchor-id="2114.10010108.0.i8.41be44efaaI66d">Technics:</span></strong><span class="propery-des" title="Woven">Woven</span></span></span></span></p>
-<p><span class="propery-des" title="Sherpa Fleece"><span class="propery-des" title="Wearable,Anti-Pilling,Portable"><span class="propery-des" title="Spring/Autumn"><span class="propery-des" title="Woven"><span>This blanket is perfect for anything you need. While you're sitting on the couch and watching a movie, or in your bed on a cold night, this blanket is sure to be a great  companion.Our fabric is strong, durable, and if cared for properly, will be long lasting.</span></span></span></span></span></p>"""
+    body1 = """<ul>
+<li>☃ UNIQUE HOODED BLANKET--The hood makes this blanket so convenient for kitchen trips during movie night so you can keep cozy while your hands or full.</li>
+<li>☃ PERSONALIZED 3D PRINTED--Full printed with colorful Galaxy / Animal / Seaside scenery makes the colorful blanket insanely vibrant. 100% No fading after washed.</li>
+<li>☃ ULTRA WARM &amp; SOFT--Lightweight fluffy fleece lined blanket with hood, keep you warm from head to leg when lying, sit or stand.</li>
+<li>☃ Perfect for All Seasons &amp; Occasions--You can wear this fleece blanket when you reading, studying, watching TV, lounging on sofa, napping, snuggling, playing games.</li>
+<li>☃ PERFECT GIFT--A heartwarming blanket for family and friends as Valentine's Day gift, Birthday gift, Mother Day's Gift, Thanksgiving gift, Christmas gift, New Year gifts.</li>
+</ul>"""
+    body2 = """<ul>
+<li>☃ UNIQUE HOODED BLANKET--The hood makes this blanket so convenient for kitchen trips during movie night so you can keep cozy while your hands or full.</li>
+<li>☃ PERSONALIZED 3D PRINTED--Full printed with colorful Galaxy / Animal / Seaside scenery makes the colorful blanket insanely vibrant. 100% No fading after washed.</li>
+<li>☃ ULTRA WARM &amp; SOFT--Lightweight fluffy fleece lined blanket with hood, keep you warm from head to leg when lying, sit or stand.</li>
+<li>☃ Perfect for All Seasons &amp; Occasions--You can wear this fleece blanket when you reading, studying, watching TV, lounging on sofa, napping, snuggling, playing games.</li>
+<li>☃ PERFECT GIFT--A heartwarming blanket for family and friends as Valentine's Day gift, Birthday gift, Mother Day's Gift, Thanksgiving gift, Christmas gift, New Year gifts.</li>
+</ul>"""
+    body3 = """<ul>
+<li>☃ UNIQUE HOODED BLANKET--The hood makes this blanket so convenient for kitchen trips during movie night so you can keep cozy while your hands or full.</li>
+<li>☃ PERSONALIZED 3D PRINTED--Full printed with colorful Galaxy / Animal / Seaside scenery makes the colorful blanket insanely vibrant. 100% No fading after washed.</li>
+<li>☃ ULTRA WARM &amp; SOFT--Lightweight fluffy fleece lined blanket with hood, keep you warm from head to leg when lying, sit or stand.</li>
+<li>☃ Perfect for All Seasons &amp; Occasions--You can wear this fleece blanket when you reading, studying, watching TV, lounging on sofa, napping, snuggling, playing games.</li>
+<li>☃ PERFECT GIFT--A heartwarming blanket for family and friends as Valentine's Day gift, Birthday gift, Mother Day's Gift, Thanksgiving gift, Christmas gift, New Year gifts.</li>
+</ul>"""
+    body4 = """<ul>
+<li>☃ UNIQUE HOODED BLANKET--The hood makes this blanket so convenient for kitchen trips during movie night so you can keep cozy while your hands or full.</li>
+<li>☃ PERSONALIZED 3D PRINTED--Full printed with colorful Galaxy / Animal / Seaside scenery makes the colorful blanket insanely vibrant. 100% No fading after washed.</li>
+<li>☃ ULTRA WARM &amp; SOFT--Lightweight fluffy fleece lined blanket with hood, keep you warm from head to leg when lying, sit or stand.</li>
+<li>☃ Perfect for All Seasons &amp; Occasions--You can wear this fleece blanket when you reading, studying, watching TV, lounging on sofa, napping, snuggling, playing games.</li>
+<li>☃ PERFECT GIFT--A heartwarming blanket for family and friends as Valentine's Day gift, Birthday gift, Mother Day's Gift, Thanksgiving gift, Christmas gift, New Year gifts.</li>
+</ul>"""
     body = [body1,body2,body3,body4]
 ##################################### Mats and Rugs ###########################################
 class matClass():
